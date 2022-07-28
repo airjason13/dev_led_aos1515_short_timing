@@ -939,22 +939,22 @@ int main(void) {
             color_interval = 0;
         }
         if((0 <= color_interval) && (color_interval < 100)){
-            r_br_level = 0x0400;//128;//32;
+            r_br_level = 0x00ff;//128;//32;
             g_br_level = 0;
             b_br_level = 0;
         }else if((100 <= color_interval) && (color_interval < 200)){
             r_br_level = 0;
-            g_br_level = 0x0400;//128;//32;
+            g_br_level = 0x00ff;//128;//32;
             b_br_level = 0;
         
         }else if((200 <= color_interval) && (color_interval < 300)){
             r_br_level = 0;
             g_br_level = 0;
-            b_br_level = 0x0400;//128;//32;
+            b_br_level = 0x00ff;//128;//32;
         }else if((300 <= color_interval) && (color_interval < 400)){
-            r_br_level = 0x0400;//128;//32;
-            g_br_level = 0x0400;//128;//32;
-            b_br_level = 0x0400;//128;//32;
+            r_br_level = 0x00ff;//128;//32;
+            g_br_level = 0x00ff;//128;//32;
+            b_br_level = 0x00ff;//128;//32;
         } 
 
 	    //test pattern
@@ -1006,7 +1006,7 @@ int main(void) {
                     }
 	            }
 	        }
-            sleep_ms(10);
+            sleep_ms(2);
         }else{
             /*printf("led_total_width = %d\n", led_total_width);
             printf("led_total_height = %d\n", led_total_height);
@@ -1051,7 +1051,7 @@ int main(void) {
                     }
 	            }
 	        }        
-	        sleep_ms(10);
+	        sleep_ms(1);
         }
     }
 
